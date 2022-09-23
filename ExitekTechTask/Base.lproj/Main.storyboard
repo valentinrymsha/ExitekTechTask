@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mobiles View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MobilesViewController" customModule="ExitekTechTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobiles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cf-5H-S1x">
+                                <rect key="frame" x="172.5" y="59" width="69" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write model here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="16v-IN-EgQ">
+                                <rect key="frame" x="87.5" y="124" width="239" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write IMEI here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="asb-FD-0IM">
+                                <rect key="frame" x="87.5" y="166" width="239" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="u99-bp-HO0">
+                                <rect key="frame" x="151" y="246" width="112" height="174"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJd-KT-5UX">
+                                        <rect key="frame" x="0.0" y="0.0" width="112" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="Save">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTappedSaveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3S3-lD-Pkq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51H-Cm-yec">
+                                        <rect key="frame" x="0.0" y="36" width="112" height="30"/>
+                                        <state key="normal" title="Check phone">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTappedCheckPhoneButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="awg-v5-2cU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTy-2z-iSB">
+                                        <rect key="frame" x="0.0" y="72" width="112" height="30"/>
+                                        <state key="normal" title="Find by IMEI">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTappedFindByEmeiButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pnz-9c-peF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8G-Y9-xbe">
+                                        <rect key="frame" x="0.0" y="108" width="112" height="30"/>
+                                        <state key="normal" title="Show all phones">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTappedShowAllPhonesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hhc-4u-ejs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUo-Yk-P5O">
+                                        <rect key="frame" x="0.0" y="144" width="112" height="30"/>
+                                        <state key="normal" title="Delete">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTappedDeleteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eT4-MB-Beg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.8835028076" green="0.98411099459999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="16v-IN-EgQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FST-aN-6iN"/>
+                            <constraint firstItem="asb-FD-0IM" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.577295" id="HQp-z2-LYB"/>
+                            <constraint firstItem="asb-FD-0IM" firstAttribute="top" secondItem="16v-IN-EgQ" secondAttribute="bottom" constant="8" symbolic="YES" id="NRU-VG-9Sx"/>
+                            <constraint firstItem="9cf-5H-S1x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PTY-Bb-4fJ"/>
+                            <constraint firstItem="u99-bp-HO0" firstAttribute="top" secondItem="asb-FD-0IM" secondAttribute="bottom" constant="46" id="W0a-i5-5vQ"/>
+                            <constraint firstItem="u99-bp-HO0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WMY-i8-ai0"/>
+                            <constraint firstItem="16v-IN-EgQ" firstAttribute="top" secondItem="9cf-5H-S1x" secondAttribute="bottom" constant="41" id="dRd-DP-I62"/>
+                            <constraint firstItem="9cf-5H-S1x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="fof-fh-mLq"/>
+                            <constraint firstItem="16v-IN-EgQ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.577295" id="phc-YO-WNy"/>
+                            <constraint firstItem="asb-FD-0IM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wdQ-qu-tUl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="checkPhoneButton" destination="51H-Cm-yec" id="Fso-54-jWN"/>
+                        <outlet property="deleteButton" destination="OUo-Yk-P5O" id="sva-r3-k6b"/>
+                        <outlet property="findByEmeiButton" destination="UTy-2z-iSB" id="3Lh-kk-vY2"/>
+                        <outlet property="imeiTextField" destination="asb-FD-0IM" id="1Ib-Ut-Kqs"/>
+                        <outlet property="modelTextField" destination="16v-IN-EgQ" id="kBW-b1-GR8"/>
+                        <outlet property="saveButton" destination="WJd-KT-5UX" id="gRy-U2-7VF"/>
+                        <outlet property="showAllPhonesButton" destination="u8G-Y9-xbe" id="w3L-Kl-G8s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.043478260869566" y="103.79464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
