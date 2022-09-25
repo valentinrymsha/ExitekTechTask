@@ -7,7 +7,6 @@ target 'ExitekTechTask' do
 
 pod 'RealmSwift'
 pod 'Realm'
-
-  # Pods for ExitekTechTask
+pod 'IQKeyboardManagerSwift'
 
 end

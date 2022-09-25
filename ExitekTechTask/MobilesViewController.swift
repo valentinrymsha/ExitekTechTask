@@ -45,7 +45,9 @@ final class MobilesViewController: UIViewController {
     
     private let userNotificationCenter = UNUserNotificationCenter.current()
     
-    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    self.view.endEditing(true)
+    }
     
     private func setupAlert(_ titleMessage: String, _ actionTitle: String){
         let alert = UIAlertController(title: titleMessage, message: nil, preferredStyle: .alert)
@@ -58,6 +60,9 @@ final class MobilesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        imeiTextField.delegate = self
+        modelTextField.delegate = self
         
         userNotificationCenter.delegate = self
         setupButtons()
@@ -165,4 +170,8 @@ extension MobilesViewController: UNUserNotificationCenterDelegate {
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         completionHandler([.badge, .badge, .sound])
     }
+}
+
+extension MobilesViewController: UITextFieldDelegate {
+    
 }
